@@ -19,8 +19,10 @@ export class Cabecalho {
         this.currentUrl = event.url;
       });
   }
-
-  isActive(route: string) {
-    return this.currentUrl === route;
+  
+  isActive(route: string): boolean {
+    return this.currentUrl === route || (this.router.url === '/' && route === '');
   }
+
+  
 }
