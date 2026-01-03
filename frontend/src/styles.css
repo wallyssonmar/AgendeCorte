@@ -1,8 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import "tailwindcss";
 
-*{
+@import "tailwindcss/preflight";
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+
+
+body{
     font-family: "Poppins", sans-serif;
+    background-color: var(--color-background-tela);
+    margin: 0;
+    padding: 0;
+    
 }
+
+
+
+@theme {
+    --color-barra-cabecalho: #EBEBEA;
+    --color-terracota: oklch(0.55 0.18 30);
+    --color-background: #F8F8F8;
+    --color-background-tela: #F8F8F8;
+
+    /*bordas*/
+    --color-bgborder-selected: #F4EDED;
+    --color-border-selected: #BE2E31;
+    --color-background-border: #FFFFFF;
+    --color-border: #D9D3D0;
+}
+
+.steper-cabecalho{
+    @apply w-10 h-10 flex items-center justify-center rounded-full;
+}
+
+/*tabela e card*/
+.grid-template{
+    @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 mb-4
+}
+.card{
+    @apply flex flex-col h-45 w-80 rounded-lg gap-4 hover:cursor-pointer;
+}
+
+.btn-primary {
+    @apply w-30 bg-terracota text-white font-bold py-2 px-4 rounded hover:bg-terracota/80 hover:cursor-pointer transition-colors;
+  }
+
+
+
+
+

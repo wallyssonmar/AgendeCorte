@@ -1,26 +1,31 @@
 <div>
-    <section class=" flex justify-center items-center mt-8 flex-col gap-10">
-        <div class="flex justify-center items-center gap-5">
-          <img class="w-16" src="tesoura-e-pente.png" alt="">  
-          <h1 class="text-5xl">Barbearia Premium</h1>  
-        </div>
-        <p>Agende seu horário de forma rápida e prática</p>
-    </section>
-    <section class="flex justify-center items-center mt-8 gap-5">
-      <div [class.ativo]="isActive('/corte') || isActive('')" >
-        <p>Tipos de corte</p>
-      </div >
-      <section class="w-25 h-0.5 bg-black rounded-xs"></section>
-      <div [class.ativo]="isActive('/profissional')">
-        <p>Escolha o profissional</p>
-      </div >
-      <section class="w-25 h-0.5 bg-black rounded-xs"></section>
-      <div [class.ativo]="isActive('/horario')">
-        <p>Escolha o horario</p>
-      </div>
-      <section class="w-25 h-0.5 bg-black rounded-xs"></section>
-      <div [class.ativo]="isActive('/confirmar')">
-        <p>Confirmar</p>
-      </div>
-    </section>
+  <section class="flex justify-center items-center mt-8 flex-col gap-10">
+    <div class="flex justify-center items-center gap-5">
+      <img class="w-16" src="tesoura-e-pente.png" alt="" />
+      <h1 class="text-5xl">Barbearia Premium</h1>
+    </div>
+    <p>Agende seu horário de forma rápida e prática</p>
+  </section>
+
+  <section class="flex justify-center items-center mt-8 gap-5">
+    
+    <p [class.ativo]="isActive('/corte') || isActive('')"class="steper-cabecalho bg-barra-cabecalho"
+    >1</p>
+
+    <section class="w-25 h-0.5 bg-barra-cabecalho rounded-xs"></section>
+
+    <p [class.ativo]="isActive('/profissional')" class="steper-cabecalho bg-barra-cabecalho">
+      2
+    </p>
+
+    <section class="w-25 h-0.5 bg-barra-cabecalho rounded-xs"></section>
+
+    <p [class.ativo]="isActive('/horario')" class="steper-cabecalho bg-barra-cabecalho">3</p>
+
+    <section class="w-25 h-0.5 bg-barra-cabecalho rounded-xs"></section>
+
+    <p [class.ativo]="isActive('/confirmar')" class="steper-cabecalho bg-barra-cabecalho">
+      4
+    </p>
+  </section>
 </div>

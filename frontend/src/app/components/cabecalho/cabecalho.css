@@ -1,6 +1,5 @@
 .ativo {
-  background: black;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
+  background: var(--color-terracota);
+  color: #E8E8E8;
+  
 }

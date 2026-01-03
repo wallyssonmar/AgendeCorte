@@ -1,3 +1,27 @@
-<div>
-   <a routerLink="/profissional"> avançar</a>
+<div class="m-5">
+  <section class="flex flex-col w-260 mx-auto gap-10">
+    <h1 class="text-4xl">Escolha o Serviço</h1>
+    <div class="grid-template">
+      <div
+        *ngFor="let corte of cortes"
+        role="button"
+        class="card"
+        [ngClass]="{'bg-bgborder-selected border-border-selected border-2' : selectedTipo === corte,
+          'bg-background-border border-border border' : selectedTipo !== corte
+        }"
+        (click)="selecionarCorte(corte)"
+      >
+        <h3 class="text-2xl  m-2" >{{ corte.name }}</h3>
+        <p class="text-1xl  m-2">{{ corte.time }} min</p>
+        <p class=" m-2">R$ {{ corte.price }},00</p>
+      </div>
+    </div>
+    <div class="flex justify-between">
+      <div></div>
+      <button class="btn-primary" routerLink="/profissional">Avançar</button>
+    </div>
+     
+  </section>
+
+ 
 </div>
