@@ -17,12 +17,13 @@ export class TipocortesService {
   ]
 
   
-
   setCorte(corte:any){
     this.corteSelecionado = corte;
   }
 
   getCorte(){
+    console.log(this.corteSelecionado);
     return this.corteSelecionado;
+    
   }
 }

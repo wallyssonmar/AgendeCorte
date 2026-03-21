@@ -18,7 +18,7 @@ body{
 
 
 @theme {
-    --color-barra-cabecalho: #EBEBEA;
+    --color-barra-cabecalho: #CCCCCB;
     --color-terracota: oklch(0.55 0.18 30);
     --color-background: #F8F8F8;
     --color-background-tela: #F8F8F8;
@@ -44,7 +44,15 @@ body{
 
 .btn-primary {
     @apply w-30 bg-terracota text-white font-bold py-2 px-4 rounded hover:bg-terracota/80 hover:cursor-pointer transition-colors;
-  }
+}
+
+.btn-desativado {
+    @apply w-30 bg-barra-cabecalho cursor-not-allowed text-white font-bold py-2 px-4 rounded;
+}
+
+.traco{
+    @apply w-full h-0.25 bg-barra-cabecalho m-0.5
+}
 
 
 

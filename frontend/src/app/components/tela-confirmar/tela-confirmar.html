@@ -1,3 +1,62 @@
-<div>
+<section class="flex flex-col items-center w-260 mx-auto gap-10 mt-6">
+  <div class=" bg-background-border border-border border rounded-lg w-180 h-80">
+    <div class=" flex flex-col m-3 gap-2 w-100">
+      <div class="flex align-baseline gap-2 mb-3">
+        <img class="w-5" src="/notepad.svg" alt="" />
+        <h1 class="text-2xl font-bold">Detalhes do agendamento</h1>
+      </div>
+      <section class="traco"></section>
+
+      <div class="flex justify-between">
+        <div class="flex align-baseline gap-2">
+          <img class="w-5" src="/scissor.svg" alt="" />
+          <p class="text-1xl"><strong>Corte: </strong></p>
+        </div>
+        <p>{{ corteSelecionado?.name }}</p>
+      </div>
+
+      <section class="traco"></section>
+
+      <div class="flex justify-between">
+        <div class="flex align-baseline gap-2">
+          <img class="w-5" src="/money.svg" alt="" />
+          <p class="text-1xl"><strong>Preço: </strong></p>
+        </div>
+        <p>R${{ corteSelecionado?.price }},00</p>
+      </div>
+      <section class="traco"></section>
+      <div class="flex justify-between">
+        <div class="flex align-baseline gap-2">
+          <img class="w-5" src="/person.svg" alt="" />
+          <p class="text-1xl"><strong>Cabeleleiro: </strong></p>
+        </div>
+        <p>{{ profissionalSelecionado?.name }}</p>
+      </div>
+      <section class="traco"></section>
+      <div class="flex justify-between">
+        <div class="flex align-baseline gap-2">
+          <img class="w-5" src="/calendar.svg" alt="" />
+          <p class="text-1xl"><strong>Data: </strong></p>
+        </div>
+        <p>{{ dataSelecionada }}</p>
+      </div>
+      <section class="traco"></section>
+      <div class="flex justify-between">
+        <div class="flex align-baseline gap-2">
+          <img class="w-5" src="/watch.svg" alt="" />
+          <p class="text-1xl"><strong>Horário: </strong></p>
+        </div>
+
+        <p>{{ horarioSelecionado }}</p>
+      </div>
+    </div>
+    <section>
+      <picture></picture>
+    </section>
+  </div>
+
+  <div class="flex justify-between w-200">
     <button class="btn-primary" routerLink="/horario">Voltar</button>
-</div>
+    <button class="btn-primary" routerLink="">Confirmar</button>
+  </div>
+</section>

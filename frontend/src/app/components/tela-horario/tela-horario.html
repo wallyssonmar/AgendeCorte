@@ -1,4 +1,36 @@
-<div>
+<div class="flex flex-col w-260 mx-auto gap-5">
+  <h1 class="text-4xl">Selecione a Data</h1>
+  <section class="flex flex-row justify-center items-center gap-5">
+    <full-calendar class="w-170 hover:cursor-pointer" *ngIf="isBrowser" [options]="calendarOptions">
+    </full-calendar>
+
+    <div class="w-72 h-[569.7px]">
+      <div class="h-16">
+        <h2 *ngIf="dataSelecionada" class="text-2xl">
+          <strong>Data selecionada:</strong> {{ dataSelecionada }}
+        </h2>
+      </div>
+
+      <h3 class="font-bold text-3xl">Horário</h3>
+      <div class="grid grid-cols-2 gap-5 mt-2">
+        @for(horario of horarios; track horario){
+        <button
+          class="w-25 h-25 rounded-full hover:cursor-pointer"
+          [ngClass]="{
+            'bg-bgborder-selected border-border-selected border-2': selectedHorario === horario,
+            'bg-background-border border-border border': selectedHorario !== horario
+          }"
+          (click)="horarioSelecionado(horario)"
+        >
+          {{ horario }}
+        </button>
+
+        }
+      </div>
+    </div>
+  </section>
+  <div class="flex justify-between">
     <button class="btn-primary" routerLink="/profissional">Voltar</button>
-    <button class="btn-primary" routerLink="/confirmar">Confirmar</button>
+    <button [disabled]="!selectedHorario" [ngClass]="selectedHorario ? 'btn-primary' : 'btn-desativado'"routerLink="/confirmar">Avançar</button>
+  </div>
 </div>

@@ -1,0 +1,6 @@
+@CabeleleiroAPI_HostAddress = http://localhost:5296
+
+GET {{CabeleleiroAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

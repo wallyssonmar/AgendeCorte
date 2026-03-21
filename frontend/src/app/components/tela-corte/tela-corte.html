@@ -1,6 +1,6 @@
 <div class="m-5">
   <section class="flex flex-col w-260 mx-auto gap-10">
-    <h1 class="text-4xl">Escolha o Serviço</h1>
+    <h1 class="text-4xl">Escolha o Corte</h1>
     <div class="grid-template">
       <div
         *ngFor="let corte of cortes"
@@ -18,7 +18,7 @@
     </div>
     <div class="flex justify-between">
       <div></div>
-      <button class="btn-primary" routerLink="/profissional">Avançar</button>
+      <button [disabled]="!selectedTipo" [ngClass]="selectedTipo ? 'btn-primary' : 'btn-desativado'"  routerLink="/profissional">Avançar</button>
     </div>
      
   </section>

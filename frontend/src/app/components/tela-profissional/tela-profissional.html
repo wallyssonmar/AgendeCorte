@@ -1,9 +1,22 @@
 <div>
-    <button (click)="teste()">alooo</button>
-    
-    <div>
-        <button class="btn-primary" routerLink="/corte" >Voltar</button>
-        <button class="btn-primary" routerLink="/horario">Avançar</button>
+  <section class="flex flex-col w-260 mx-auto gap-10">
+    <h1 class="text-4xl">Escolha o Profissional</h1>
+    <div class="grid-template">
+      <div
+        *ngFor="let profissional of profissionals"
+        role="button"
+        class="card"
+        [ngClass]="{'bg-bgborder-selected border-border-selected border-2' : profissionalSelected === profissional,
+          'bg-background-border border-border border' : profissionalSelected !== profissional
+        }"
+        (click)="selecionarProfissional(profissional)"
+      >
+        <h3 class="text-2xl m-2">{{ profissional.name }}</h3>
+      </div>
     </div>
-    
+    <div class="flex justify-between">
+      <button class="btn-primary" routerLink="/corte">Voltar</button>
+      <button [disabled]="!profissionalSelected" [ngClass]="profissionalSelected ? 'btn-primary' : 'btn-desativado'" routerLink="/horario">Avançar</button>
+    </div>
+  </section>
 </div>
