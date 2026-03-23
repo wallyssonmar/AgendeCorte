@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CabeleleiroAPI.Migrations
 {
-    [DbContext(typeof(CabeleleiroApiContext))]
+    [DbContext(typeof(AgendamentoApiContext))]
     partial class CabeleleiroApiContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

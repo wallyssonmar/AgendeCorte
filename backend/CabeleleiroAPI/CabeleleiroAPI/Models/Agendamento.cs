@@ -1,6 +1,7 @@
 ﻿namespace CabeleleiroAPI.Models
 {
     public class Agendamento
+
     {
         public int Id { get; set; }
         public required Corte Corte { get; set; }

@@ -1,0 +1,9 @@
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.csproj.AssemblyReference.cache
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.AssemblyInfoInputs.cache
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.AssemblyInfo.cs
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.csproj.CoreCompileInputs.cache
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Estudos\Barbearia\backend\CabeleleiroAPI\CabeleleiroAPI\obj\Debug\net10.0\AgendamentoAPI.sourcelink.json

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CabeleleiroAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AgendamentoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bd3ee4b3b35d0f09264ef823414468a923c1f72")]
-[assembly: System.Reflection.AssemblyProductAttribute("CabeleleiroAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("CabeleleiroAPI")]
+[assembly: System.Reflection.AssemblyProductAttribute("AgendamentoAPI")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AgendamentoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

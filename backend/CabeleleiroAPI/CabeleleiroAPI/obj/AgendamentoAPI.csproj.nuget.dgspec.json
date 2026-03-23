@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\CabeleleiroAPI.csproj": {}
+    "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\AgendamentoAPI.csproj": {}
   },
   "projects": {
-    "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\CabeleleiroAPI.csproj": {
+    "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\AgendamentoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\CabeleleiroAPI.csproj",
-        "projectName": "CabeleleiroAPI",
-        "projectPath": "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\CabeleleiroAPI.csproj",
+        "projectUniqueName": "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\AgendamentoAPI.csproj",
+        "projectName": "AgendamentoAPI",
+        "projectPath": "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\AgendamentoAPI.csproj",
         "packagesPath": "C:\\Users\\Wallysson Marcos\\.nuget\\packages\\",
         "outputPath": "D:\\Estudos\\Barbearia\\backend\\CabeleleiroAPI\\CabeleleiroAPI\\obj\\",
         "projectStyle": "PackageReference",

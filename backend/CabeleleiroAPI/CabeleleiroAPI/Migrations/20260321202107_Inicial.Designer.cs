@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CabeleleiroAPI.Migrations
 {
-    [DbContext(typeof(CabeleleiroApiContext))]
+    [DbContext(typeof(AgendamentoApiContext))]
     [Migration("20260321202107_Inicial")]
     partial class Inicial
     {

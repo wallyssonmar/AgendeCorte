@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CabeleleiroAPI.Data
 {
-    public class CabeleleiroApiContext: DbContext
+    public class AgendamentoApiContext: DbContext
     {
-        public CabeleleiroApiContext(DbContextOptions<CabeleleiroApiContext> opt): base(opt)
+        public AgendamentoApiContext(DbContextOptions<AgendamentoApiContext> opt): base(opt)
         {
             
         }
