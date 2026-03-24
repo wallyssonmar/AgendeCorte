@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TipocortesService } from '../../services/tipocortesService';
 import { ProfissionalService } from '../../services/profissionalService';
 import { HorarioService } from '../../services/horario-service';
+import { Agendamento } from '../../models/agendamento';
 
 @Component({
   selector: 'app-tela-confirmar',
@@ -26,9 +27,9 @@ dataSelecionada: any
     this.profissionalSelecionado= this.profissionalService.getProfissional();
     this.horarioSelecionado = this.horarioService.getHorario();
     this.dataSelecionada = this.horarioService.getData();
-    
-    
 
   }
+
+  
 
 }

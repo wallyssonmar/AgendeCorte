@@ -27,19 +27,22 @@ namespace CabeleleiroAPI.Repositories
             return retorno.Entity;
         }
 
-        internal async Task ExcluirAsync(int id)
+        internal async Task ExcluirAsync(Agendamento agendamento)
         {
-            throw new NotImplementedException();
+            _context.Remove(agendamento);
+            await _context.SaveChangesAsync();
         }
 
-        internal async Task AlterarAsync(int id, Agendamento agendamento)
+        internal async Task AlterarAsync(Agendamento registroNoBanco, Agendamento agendamento)
         {
-            throw new NotImplementedException();
+            _context.Entry(registroNoBanco).CurrentValues.SetValues(agendamento);
+            await _context.SaveChangesAsync();
         }
 
         internal async Task<Agendamento?> ObterPorIdAsync(int id)
         {
-            throw new NotImplementedException();
+            Agendamento? registroNoBanco = await _context.Agendamentos.FindAsync(id);
+            return registroNoBanco;
         }
     }
 }

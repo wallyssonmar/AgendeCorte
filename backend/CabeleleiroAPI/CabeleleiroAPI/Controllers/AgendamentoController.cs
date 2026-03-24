@@ -14,23 +14,50 @@ namespace CabeleleiroAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Agendamento>>> ListarAsync()
         {
-            List<Agendamento> retorno = await agendamentoService.ListarAsync();
+            try
+            {
+                List<Agendamento> retorno = await agendamentoService.ListarAsync();
 
-            return retorno;
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+            
         }
 
         [HttpPost]
         public async Task<ActionResult<Agendamento>> IncluirAsync([FromBody] Agendamento agendamento)
         {
-            Agendamento retorno = await agendamentoService.IncluirAsync(agendamento);
-            return retorno;
+            try
+            {
+                Agendamento retorno = await agendamentoService.IncluirAsync(agendamento);
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+            
         }
 
         [HttpPut("{id}")]
         public async Task<ActionResult> AlterarAsync(int id, [FromBody] Agendamento agendamento)
         {
-            await agendamentoService.AlterarAsync(id, agendamento);
-            return NoContent();
+            try
+            {
+                await agendamentoService.AlterarAsync(id, agendamento);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+            
         }
 
 
@@ -40,8 +67,19 @@ namespace CabeleleiroAPI.Controllers
 
         public async Task<ActionResult> ExcluirAsync(int id)
         {
-            await agendamentoService.ExcluirAsync(id);
-            return NoContent();
+
+            try
+            {   
+              await agendamentoService.ExcluirAsync(id);
+              return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+            
         }
     }
 }

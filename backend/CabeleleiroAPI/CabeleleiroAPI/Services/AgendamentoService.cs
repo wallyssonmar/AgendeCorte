@@ -15,12 +15,7 @@ namespace CabeleleiroAPI.Services
             _agendamentoRepository = agendamentoRepository;
         }
 
-        public async Task<Agendamento> ObterPorId(int id)
-        {
-            Agendamento? retorno = await _agendamentoRepository.ObterPorIdAsync(id);
-
-            return retorno;
-        }
+        
 
         public async Task<List<Agendamento>> ListarAsync()
         {
@@ -37,12 +32,27 @@ namespace CabeleleiroAPI.Services
 
         internal async Task AlterarAsync(int id, Agendamento agendamento)
         {
-            await _agendamentoRepository.AlterarAsync(id, agendamento);
+
+            Agendamento? registroNoBanco = await _agendamentoRepository.ObterPorIdAsync(id);
+            if (registroNoBanco == null) 
+            {
+                throw new Exception("Id não encontrado");
+            }
+
+            await _agendamentoRepository.AlterarAsync(registroNoBanco, agendamento);
+
         }
 
         internal async Task ExcluirAsync(int id)
         {
-            await _agendamentoRepository.ExcluirAsync(id);
+
+            Agendamento? registroNoBanco = await _agendamentoRepository.ObterPorIdAsync(id);
+            if (registroNoBanco == null)
+            {
+                throw new Exception("Id não encontrado");
+            }
+
+            await _agendamentoRepository.ExcluirAsync(registroNoBanco);
         }
     }
 }

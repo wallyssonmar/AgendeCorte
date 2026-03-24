@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TipoCorte } from '../models/cortes';
+import { TipoCorte } from '../models/corte';
 
 @Injectable({
   providedIn: 'root',

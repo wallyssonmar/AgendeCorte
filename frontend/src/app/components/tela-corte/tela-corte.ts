@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { RouterLink } from '@angular/router';
 import { TipocortesService } from '../../services/tipocortesService';
-import { TipoCorte } from '../../models/cortes';
+import { TipoCorte } from '../../models/corte';
 import { CommonModule } from '@angular/common';
 
 
