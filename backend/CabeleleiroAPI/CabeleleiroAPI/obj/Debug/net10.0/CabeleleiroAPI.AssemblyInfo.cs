@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CabeleleiroAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8098a4b008a776de7854549531aea5758313dc5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d27d8a9ec74bd2792ac89afc8532b7b542d93cdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CabeleleiroAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CabeleleiroAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

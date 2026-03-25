@@ -3,10 +3,10 @@ import { Profissional } from "./profissional";
 
 export interface Agendamento{
 
-    id: Number;
+    id?: number;
     corte: Corte;
     profissional: Profissional;
-    data: Number;
-    horario: Number;
+    data: number;
+    horario: number;
  
 }

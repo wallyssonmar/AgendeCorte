@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { RouterLink } from '@angular/router';
 import { TipocortesService } from '../../services/tipocortesService';
-import { TipoCorte } from '../../models/corte';
+import { Corte } from '../../models/corte';
 import { CommonModule } from '@angular/common';
 
 
@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class TelaCorte {
   corteSelecionado = '';
   selectedTipo : any = null;
-  cortes: TipoCorte[] = [];
+  cortes: Corte[] = [];
   
 
   constructor(private tipocortesService: TipocortesService,) {}

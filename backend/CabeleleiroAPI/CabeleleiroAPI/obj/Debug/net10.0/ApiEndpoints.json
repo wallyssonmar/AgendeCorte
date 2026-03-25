@@ -1,1 +1,85 @@
-[]
+[
+  {
+    "ContainingType": "CabeleleiroAPI.Controllers.AgendamentoController",
+    "Method": "ListarAsync",
+    "RelativePath": "api/Agendamento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CabeleleiroAPI.Models.Agendamento, CabeleleiroAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CabeleleiroAPI.Controllers.AgendamentoController",
+    "Method": "IncluirAsync",
+    "RelativePath": "api/Agendamento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agendamento",
+        "Type": "CabeleleiroAPI.Models.Agendamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CabeleleiroAPI.Models.Agendamento",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CabeleleiroAPI.Controllers.AgendamentoController",
+    "Method": "AlterarAsync",
+    "RelativePath": "api/Agendamento/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "agendamento",
+        "Type": "CabeleleiroAPI.Models.Agendamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CabeleleiroAPI.Controllers.AgendamentoController",
+    "Method": "ExcluirAsync",
+    "RelativePath": "api/Agendamento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

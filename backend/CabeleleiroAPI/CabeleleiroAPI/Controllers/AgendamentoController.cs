@@ -34,7 +34,16 @@ namespace CabeleleiroAPI.Controllers
             try
             {
                 Agendamento retorno = await agendamentoService.IncluirAsync(agendamento);
-                return retorno;
+                return Ok(new
+                {
+                    retorno.Id,
+                    retorno.Data,
+                    retorno.Horario,
+                    Profissional = new
+                    {
+                        retorno.Profissional.Name
+                    }
+                });
             }
             catch (Exception ex)
             {

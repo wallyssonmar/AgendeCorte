@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TipoCorte } from '../models/corte';
+import { Corte } from '../models/corte';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +7,7 @@ import { TipoCorte } from '../models/corte';
 export class TipocortesService {
   corteSelecionado: any;
 
-  cortes: TipoCorte [] =
+  cortes: Corte [] =
   [{name: 'Corte Tradicional', price: 35, time: 30},
    {name: 'Barba', price: 25, time: 25},
    {name: 'Degradê', price: 45, time: 50},

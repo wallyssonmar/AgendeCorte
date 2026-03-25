@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Agendamento } from '../models/agendamento';
 
 
 @Injectable({
@@ -10,5 +11,7 @@ export class AgendamentoService {
 
   constructor(private http: HttpClient) {}
 
-  
+  setAgendamento(agendamento: Agendamento){
+    return this.http.post(this.apiUrl,agendamento)
+  }
 }
